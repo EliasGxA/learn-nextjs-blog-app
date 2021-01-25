@@ -1,8 +1,16 @@
-const handler = (req, res) => {
+{/* const handler = (req, res) => {
   res.status(200).json({ text: 'Hello' })
 }
 
 export default handler
+*/}
+
+import { NextApiRequest, NextApiResponse } from 'next'
+
+export default (_: NextApiRequest, res: NextApiResponse) => {
+  res.status(200).json({ text: 'Hello' })
+}
+
 
 // go to:  http://localhost:3000/api/hello
 //
